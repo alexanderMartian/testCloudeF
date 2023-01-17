@@ -1,0 +1,61 @@
+.customField {
+  display: flex;
+  flex-direction: column;
+  min-width: 50%;
+
+  &:hover input {
+    border: 1px solid black;
+  }
+}
+
+.customTextArea {
+  @extend .customField;
+  & > textarea {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 100px;
+    max-height: 100px;
+    box-sizing: border-box;
+  }
+}
+
+.customField > input {
+  padding: 2px 10px;
+  color: black;
+  background-color: transparent;
+  border: 1px solid black;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 34px;
+
+  &:focus-visible,
+  &:focus {
+    border: 1px solid black;
+    border-radius: 0;
+    outline: none;
+  }
+
+  &::placeholder {
+    color: black;
+  }
+}
+
+.label {
+  padding-left: 10px;
+  width: 100%;
+  color: black;
+  font-size: 10px;
+  font-weight: 300;
+  text-align: left;
+}
+
+.errLabel {
+  @extend .label;
+  color: red !important;
+  align-self: flex-end;
+  padding-right: 10px;
+}
+
+.err {
+  border-color: red !important;
+}

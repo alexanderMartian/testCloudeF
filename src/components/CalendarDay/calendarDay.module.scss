@@ -1,0 +1,37 @@
+.calendarDaysItem {
+  cursor: pointer;
+  padding: 10px 5px 60px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  min-height: 90px;
+  max-height: 90px;
+  &:hover {
+    background-color: dodgerblue;
+  }
+}
+
+.calendarToday {
+  background-color: #e7ffde;
+}
+
+.calendarSelected {
+  background-color: dodgerblue;
+}
+
+.calendarAdditional {
+  color: gray;
+  background-color: #f5f5f5;
+}
+
+.dayNameNumber {
+  display: flex;
+  justify-content: space-between;
+}
+
+.eventWrapper {
+  & div:first-child {
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,37 @@
+.btn {
+  padding: 15px 30px;
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  margin: 10px;
+
+  &:disabled {
+    border: 1px dotted grey;
+    color: grey;
+
+    &:hover {
+      background-color: black;
+
+      &[data-dis-tip]:not([data-dis-tip=''])::after {
+        position: absolute;
+        content: attr(data-dis-tip);
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%);
+        background-color: black;
+        outline: 1px solid black;
+        color: black;
+      }
+    }
+  }
+
+  &:active {
+    background: dodgerblue;
+  }
+}

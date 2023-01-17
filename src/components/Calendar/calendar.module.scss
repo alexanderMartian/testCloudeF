@@ -1,0 +1,35 @@
+.weekNames {
+  margin-top: 10px;
+  height: 20px;
+  font-weight: 600;
+  font-size: 8px;
+  color: royalblue;
+  text-align: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1px 1px;
+}
+
+.calendarDays {
+  text-align: center;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 1fr;
+  font-size: 8px;
+  border: 1px solid grey;
+  & > :nth-child(n + 8) {
+    border-top: 1px solid grey;
+  }
+  & > :not(:nth-child(7n)) {
+    border-right: 1px solid grey;
+  }
+  & > :nth-child(3) {
+    border-right: 1px solid grey;
+  }
+}
+
+.wrapper {
+  margin: 50px 70px;
+}

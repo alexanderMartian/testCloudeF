@@ -1,0 +1,27 @@
+.calendarPickItemsContainer {
+  font-weight: 400;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 1px 1px;
+  font-size: 12px;
+}
+
+.calendarPickItem {
+  padding: 9px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  &:hover {
+    background-color: dodgerblue;
+  }
+}
+
+.calendarTodayItem {
+  background-color: darkseagreen;
+}
+.calendarSelectedItem {
+  background-color: dodgerblue;
+}

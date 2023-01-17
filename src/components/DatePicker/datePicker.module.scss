@@ -1,0 +1,39 @@
+.mainWrapper {
+  position: absolute;
+  top: 15%;
+  left: calc(90% - 200px);
+  background-color: gold;
+}
+
+.pickerHeader {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  box-shadow: 0 2px 10px -1px rgb(0 0 0 / 90%);
+  border: 1px solid mediumslateblue;
+
+  & * {
+    padding: 20px;
+  }
+  & *:hover {
+    background-color: dodgerblue;
+  }
+  & div:first-child {
+    text-align: center;
+    border-right: 1px solid mediumslateblue;
+    min-width: 120px;
+  }
+}
+
+.closeElement {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: darkred;
+  top: 0;
+  right: 0;
+}
+
+.pickerActive {
+  background-color: dodgerblue;
+}
