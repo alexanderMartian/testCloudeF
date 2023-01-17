@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2780f91c.css",
+    "main.js": "/static/js/main.cfa470d4.js",
+    "static/media/addIcon.svg": "/static/media/addIcon.45ae263c86696604b51a1fcf4204e3b2.svg",
+    "static/media/datePicker.svg": "/static/media/datePicker.454ac56362a89ea09d78f22322132694.svg",
+    "index.html": "/index.html",
+    "static/media/arrow.svg": "/static/media/arrow.6201749a74705d2273d377bdea288e8f.svg",
+    "static/media/delete.svg": "/static/media/delete.db9005c0df8da6698946e0019079e739.svg",
+    "static/media/close.svg": "/static/media/close.9259bf50699d09de0b8cd09c31e575b8.svg",
+    "main.2780f91c.css.map": "/static/css/main.2780f91c.css.map",
+    "main.cfa470d4.js.map": "/static/js/main.cfa470d4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2780f91c.css",
+    "static/js/main.cfa470d4.js"
+  ]
+}
